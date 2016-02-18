@@ -2,20 +2,34 @@
  * Created by meicj on 15/10/22.
  */
 
-const http = require('http');
-const forward = require('http-forward');
+var http = require('http');
+var forward = require('http-forward');
 
-module.exports =
-    function forwardPort(portForm, portTo, isPrivateAccess) {
+/**
+ * Forward port for incoming HTTP requests
+ * @param {Number} portForm - The port NO. which you want to forward from
+ * @param {Number} portTo - The port NO. which you want to forward to
+ * @param {Object} [options] - Options Config object passed to the forward
+ * @param {Boolean} [options.isPublicAccess=false] - If true the new port will be accessible for others
+ */
+function forwardPort(portForm, portTo, options) {
 
-        var listenHost = isPrivateAccess ? '127.0.0.1' : '0.0.0.0';
-        var server = http.createServer(function (req, res) {
+    options = options || {};
 
-            req.forward = {target: 'http://localhost:' + portForm};
+    var listenHost = options.isPublicAccess ? '0.0.0.0' : '127.0.0.1';
+    var server = http.createServer(function (req, res) {
 
-            forward(req, res)
-        });
+        req.forward = {target: 'http://localhost:' + portForm};
+        forward(req, res);
 
-        server.listen(portTo, listenHost);
-        console.log('server start. forward port ' + portForm + ' to ' + portTo);
-    };
+    });
+
+    server.listen(portTo, listenHost);
+
+    console.log(
+        'server start. forward port ' + portForm + ' to ' + portTo +
+        (options.isPublicAccess ? '(publicly accessible)' : '')
+    );
+}
+
+module.exports = forwardPort;

@@ -1,8 +1,8 @@
 
-Simple port forward for incoming HTTP requests. Built for [node](http://nodejs.org).
+[![NPM Version][npm-version]][npm-url] 
+[![NPM Downloads][npm-downloads-image]][npm-url]
 
-[![NPM Version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
+Simple port forward for incoming HTTP requests. Built for [node](http://nodejs.org).
   
 ## Installation
 
@@ -10,26 +10,38 @@ Simple port forward for incoming HTTP requests. Built for [node](http://nodejs.o
 $ npm install http-port-forward
 ```
 
-## API
+## Quick Start
+
+Use the code below to create a file named sample.js
 
 ```js
-const forward = require('http-port-forward');
+var forward = require('http-port-forward');
 
 // forward all local 1088 port http requests to 88 port.
 forward(1088, 88);
 ```
 
-### forward(portForm, portTo, isPrivateAccess)
+Run by NodeJs. If you forward to port less than 1024 on Mac/Linux, you may need execute node by `sudo`
 
-- **portForm** `Number` - Required
-- **portTo** `Number` - Required
-- **isPrivateAccess** `Boolean` - Optional
+```bash
+$ sudo node sample.js
+```
+
+Now you can use http://localhost:88 to visit the page on http://localhost:1088
+
+## API
+
+### forward(portForm, portTo, options)
+
+- **portForm** `Number` - Required, port NO. which you want to forward from
+- **portTo** `Number` - Required, port NO. which you want to forward to
+- **options** `Object` - Optional, options Config object passed to the forward
+- **options.isPublicAccess** `Boolean` - Optional, if true the new port will be accessible for others
 
 ## License
 
 MIT(LICENSE)
 
-[npm-image]: https://img.shields.io/npm/v/http-port-forward.svg
+[npm-version]: https://img.shields.io/npm/v/http-port-forward.svg?label=npm%20package
 [npm-url]: https://npmjs.org/package/http-port-forward
-[downloads-image]: https://img.shields.io/npm/dm/http-port-forward.svg
-[downloads-url]: https://npmjs.org/package/http-port-forward
+[npm-downloads-image]: https://img.shields.io/npm/dm/http-port-forward.svg?label=npm%20downloads
