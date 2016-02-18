@@ -1,4 +1,5 @@
 
+[![Build Status][build-status]][build-url] 
 [![NPM Version][npm-version]][npm-url] 
 [![NPM Downloads][npm-downloads-image]][npm-url]
 
@@ -42,6 +43,8 @@ Now you can use http://localhost:88 to visit the page on http://localhost:1088
 
 MIT(LICENSE)
 
+[build-status]: https://api.travis-ci.org/meicj/node-http-port-forward.svg?branch=master&style=flat
+[build-url]: https://travis-ci.org/meicj/node-http-port-forward
 [npm-version]: https://img.shields.io/npm/v/http-port-forward.svg?label=npm%20package
 [npm-url]: https://npmjs.org/package/http-port-forward
 [npm-downloads-image]: https://img.shields.io/npm/dm/http-port-forward.svg?label=npm%20downloads
