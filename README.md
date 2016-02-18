@@ -1,10 +1,13 @@
 
-Simple port forward for incoming HTTP requests. Built for node.js.
+Simple port forward for incoming HTTP requests. Built for [node](http://nodejs.org).
 
+[![NPM Version][npm-image]][npm-url]
+[![NPM Downloads][downloads-image]][downloads-url]
+  
 ## Installation
 
-```
-npm install http-port-forward
+```bash
+$ npm install http-port-forward
 ```
 
 ## API
@@ -12,7 +15,7 @@ npm install http-port-forward
 ```js
 const forward = require('http-port-forward');
 
-// forward all local 1088 port http requests forward to 88 port.
+// forward all local 1088 port http requests to 88 port.
 forward(1088, 88);
 ```
 
@@ -24,4 +27,9 @@ forward(1088, 88);
 
 ## License
 
-MIT
+MIT(LICENSE)
+
+[npm-image]: https://img.shields.io/npm/v/http-port-forward.svg
+[npm-url]: https://npmjs.org/package/http-port-forward
+[downloads-image]: https://img.shields.io/npm/dm/http-port-forward.svg
+[downloads-url]: https://npmjs.org/package/http-port-forward
