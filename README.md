@@ -2,12 +2,13 @@
 [![Build Status][build-status]][build-url] 
 [![NPM Version][npm-version]][npm-url] 
 [![NPM Downloads][npm-downloads-image]][npm-url]
+[![Gitter Chat][gitter-image]][gitter-url]
 
 Simple port forward for incoming HTTP requests. Built for [node](http://nodejs.org).
   
 ## Installation
 
-[![Join the chat at https://gitter.im/meicj/node-http-port-forward](https://badges.gitter.im/meicj/node-http-port-forward.svg)](https://gitter.im/meicj/node-http-port-forward?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/meicj/node-http-port-forward]()]()
 
 ```bash
 $ npm install http-port-forward
@@ -50,3 +51,5 @@ MIT(LICENSE)
 [npm-version]: https://img.shields.io/npm/v/http-port-forward.svg?label=npm%20package
 [npm-url]: https://npmjs.org/package/http-port-forward
 [npm-downloads-image]: https://img.shields.io/npm/dm/http-port-forward.svg?label=npm%20downloads
+[gitter-image]: https://badges.gitter.im/meicj/node-http-port-forward.svg
+[gitter-url]: https://gitter.im/meicj/node-http-port-forward?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
