@@ -7,6 +7,8 @@ Simple port forward for incoming HTTP requests. Built for [node](http://nodejs.o
   
 ## Installation
 
+[![Join the chat at https://gitter.im/meicj/node-http-port-forward](https://badges.gitter.im/meicj/node-http-port-forward.svg)](https://gitter.im/meicj/node-http-port-forward?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ```bash
 $ npm install http-port-forward
 ```
