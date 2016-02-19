@@ -4,7 +4,7 @@
 [![NPM Downloads][npm-downloads-image]][npm-url]
 [![Gitter Chat][gitter-image]][gitter-url]
 
-Simple port forward for incoming HTTP requests, cross-platform supported base on [NodeJs](http://nodejs.org).
+Simple port forward for incoming HTTP requests, cross-platform supported base on [NodeJS](http://nodejs.org).
   
 ## Installation
 
