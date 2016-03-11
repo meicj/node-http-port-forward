@@ -1,6 +1,6 @@
 {
   "name": "http-port-forward",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Simple port forward for incoming HTTP requests, cross-platform supported base on NodeJS",
   "main": "index.js",
   "dependencies": {
