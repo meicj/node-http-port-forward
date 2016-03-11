@@ -4,7 +4,7 @@
 [![NPM Downloads][npm-downloads-image]][npm-url]
 [![Gitter Chat][gitter-image]][gitter-url]
 
-Simple port forward for incoming HTTP requests, cross-platform supported base on [NodeJS](http://nodejs.org).
+Simple port forward for incoming HTTP requests, cross-platform supported base on [Node.js](http://nodejs.org).
   
 ## Installation
 
@@ -23,13 +23,13 @@ var forward = require('http-port-forward');
 forward(1088, 88);
 ```
 
-Run by NodeJs. If you forward to port less than 1024 on Mac/Linux, you may need execute node by `sudo`
+Run by `Node.js`. If you forward to port less than 1024 on Mac/Linux, you may need execute node by `sudo`
 
 ```bash
 $ sudo node sample.js
 ```
 
-Now you can use http://localhost:88 to visit the page on http://localhost:1088
+Now you can use `http://localhost:88` to visit the page on `http://localhost:1088`
 
 ## API
 
